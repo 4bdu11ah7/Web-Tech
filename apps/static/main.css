@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Task 1 */
+.link {
+    display: block;
+    padding: 16px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.link1 {
+    background-color: #98eea7;
+    color: #d44a2f;
+}
+
+.link2 {
+    background-color: #555;
+    color: #f0c330;
+}
+
+.link3 {
+    background-color: #000;
+    color: #fff;
+}
+
+/* states */
+.link:visited {
+    opacity: 0.9;
+}
+
+.link:hover {
+    background-color: #222;
+    color: white;
+}
+
+.link:active {
+    color: red;
+}
+
+/* Task 2 */
+h1 {
+    color: green;
+    background-color: #ece8c9;
+    padding: 12px;
+}
+
+/* Task 3 */
+.listing-title {
+    background-color: #6aa9ad;
+    color: white;
+    padding: 14px;
+}
+
+/* Task 4 */
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+table, th, td {
+    border: 1px solid gray;
+    padding: 8px;
+    text-align: center;
+}
+
+.table1 caption,
+.table2 caption {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.table2 th {
+    font-weight: bold;
+}

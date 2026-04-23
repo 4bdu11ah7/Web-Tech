@@ -1,0 +1,9 @@
+{% extends "layouts/base.html" %}
+{% block title %} Lab8 Task3 {% endblock title %}
+{% block content %}
+<h1>Books with edition ≤ 3 and title/author does not contain 'qu'</h1>
+{% for book in books %}
+    <p>{{ book.title }} - {{ book.author }} - Edition: {{ book.edition }}</p>
+    <hr>
+{% endfor %}
+{% endblock content %}
