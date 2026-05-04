@@ -1,0 +1,9 @@
+{% extends "layouts/base.html" %}
+{% block title %} Lab9 Task2 {% endblock title %}
+{% block content %}
+<h1>Publishers with Total Book Stock</h1>
+{% for publisher in publishers %}
+    <p>{{ publisher.name }} - Total Stock: {{ publisher.total_stock }}</p>
+    <hr>
+{% endfor %}
+{% endblock content %}

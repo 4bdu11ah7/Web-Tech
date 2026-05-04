@@ -1,0 +1,9 @@
+{% extends "layouts/base.html" %}
+{% block title %} Lab9 Task1 {% endblock title %}
+{% block content %}
+<h1>Books Availability</h1>
+{% for book in books %}
+    <p>{{ book.title }} - Quantity: {{ book.quantity }} - Availability: {{ book.percentage }}%</p>
+    <hr>
+{% endfor %}
+{% endblock content %}

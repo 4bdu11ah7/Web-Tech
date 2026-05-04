@@ -1,0 +1,9 @@
+{% extends "layouts/base.html" %}
+{% block title %} Lab9 Task4 {% endblock title %}
+{% block content %}
+<h1>Book Prices per Publisher</h1>
+{% for publisher in publishers %}
+    <p>{{ publisher.name }} - Avg: ${{ publisher.avg_price|floatformat:2 }} - Min: ${{ publisher.min_price }} - Max: ${{ publisher.max_price }}</p>
+    <hr>
+{% endfor %}
+{% endblock content %}

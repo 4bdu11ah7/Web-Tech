@@ -1,0 +1,9 @@
+{% extends "layouts/base.html" %}
+{% block title %} Lab9 Task6 {% endblock title %}
+{% block content %}
+<h1>Book Count per Publisher (price > 50, quantity 1-4)</h1>
+{% for publisher in publishers %}
+    <p>{{ publisher.name }} - Book Count: {{ publisher.book_count }}</p>
+    <hr>
+{% endfor %}
+{% endblock content %}
